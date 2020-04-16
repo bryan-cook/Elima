@@ -1,0 +1,74 @@
+.middle {
+    clear: left;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.4);
+}
+*{
+    list-style: none;
+    text-decoration: none;
+}
+.menu {
+    padding: 3rem;
+    overflow: hidden;
+}
+
+.item {
+    overflow: hidden;
+    border-radius: 4px;
+    margin: 20px 0 0 0;
+}
+
+.bttn {
+    display: block;
+    padding: 16px 20px;
+    background: #fff;
+    color: #000;
+    position: relative;
+}
+
+.bttn::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.smenu {
+    background: #333;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.smenu .aka {
+    display: block;
+    color: white;
+    padding: 16px 26px;
+    font-size: 14px;
+    margin: 4px 0;
+    position: relative;
+}
+
+.smenu .aka::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background: #d17f20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+.smenu .aka:hover::before {
+    opacity: 1;
+}
+
+.item:target .smenu {
+    max-height: 10em;
+}

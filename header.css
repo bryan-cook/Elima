@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+     font-family: 'Montserrat';
+}
+.first_order{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    
+}
+.sep-data{
+  margin-right: 5px;
+}
+.top_nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 2rem;
+}
+hr{
+    opacity: .4;
+}
+
+.rage{
+    text-decoration: none;
+    color: #000;
+    transition: color .3s;
+    margin-left: 25px;
+    padding: 8px 10px;
+    
+}
+.rage:hover{
+    color: #d17f20;
+}
+.title{
+    padding: 0  4rem;
+}
+span.let{
+    font-family: cursive;
+    font-size: 25px;
+}
+.second_order{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.land_page{
+    background: url('pics/320986.jpg') fixed;
+    height: 80vh;
+    background-size: cover;
+    background-position: right;
+}
+
+
+/*special search bar*/
+.search_bar{
+    height: 30px;
+    background: #d17f20;
+    border-radius: 40px;
+    position: relative;
+    line-height: 30px;
+    width: 38px;
+    transition: width .5s;
+    overflow: hidden;
+}
+input[name="pot"]{
+    background: none;
+    border: none;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    padding-left: 10px;
+    outline: none;
+}
+.pap{
+    position: absolute;
+    left: 10px;
+    top: 20%;
+}
+.call{
+    margin: 0 10px;
+}
+.search_bar:hover{
+     width: 435px;
+}
+.btn{
+    padding: auto 20px;
+    background: #d17f20;
+    border-radius: 3px;
+    padding: 8px 20px;
+    transition: background .3s;
+}
+.btn:hover{
+    background: #fff;
+    color: #d17f20;
+}
+/*content landing pade*/
+.land_content{
+    position: absolute;
+    top: 30%;
+    mix-blend-mode: color-dodge;
+    left: 5%;
+    width: 40%;
+    padding: 2rem;  
+    color: #fff;
+    letter-spacing: 2px;
+}
+.land_content h1{ 
+    margin-bottom: 4rem;    
+}
+
